@@ -14,6 +14,12 @@
 
     More information can be found in [capybara's README](https://github.com/jnicklas/capybara#matching)
 
+*   Admin menu has been moved from top of the page to the left side.
+
+    * [Solidus_auth_devise](https://github.com/solidusio/solidus_auth_devise) has been updated to override the new login nav location.
+    * Any project overrides of `<nav data-hook="admin_login_navigation_bar"></nav>` must change from `spree/admin/shared/_header/auth_admin_login_navigation_bar.html.erb.deface` to `spree/admin/shared/_navigation_footer/auth_admin_login_navigation_bar.html.erb.deface`
+
+
 ## Solidus 1.1.0 (unreleased)
 
 *   Address is immutable (Address#readonly? is always true)
@@ -60,4 +66,3 @@ See https://github.com/solidusio/solidus/releases/tag/v1.0.1
 ## Solidus 1.0.0 (2015-08-11)
 
 See https://github.com/solidusio/solidus/releases/tag/v1.0.0
-
