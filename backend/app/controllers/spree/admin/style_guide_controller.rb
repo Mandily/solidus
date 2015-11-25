@@ -5,6 +5,15 @@ module Spree
       layout '/spree/layouts/admin_style_guide'
 
       def index
+        @topics = {
+          visuals: [],
+          typography: [
+            'headings',
+            'lists'
+          ],
+          forms: [],
+          navigation: []
+        }
       end
     end
   end
