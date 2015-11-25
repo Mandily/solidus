@@ -14,9 +14,9 @@
 //= require responsive-tables
 //= require underscore-min
 //= require backbone
+//= require prism
 //= require spree
 //= require ./backend/backbone-overrides
 //= require spree/backend/spree-select2
 //= require_tree ./backend/templates
 //= require_tree .
-
