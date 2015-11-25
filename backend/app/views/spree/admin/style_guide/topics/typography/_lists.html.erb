@@ -1,0 +1,24 @@
+<%- snippet = capture do %>
+  <ul>
+    <li>List item with a much longer description or more content.</li>
+    <li>List item</li>
+    <li>List item
+    <ul>
+      <li>Nested list item</li>
+      <li>Nested list item</li>
+      <li>Nested list item</li>
+    </ul>
+    </li>
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+  </ul>
+<%- end %>
+
+<div class="style-guide-result">
+  <%= snippet %>
+</div>
+
+<div class="style-guide-code">
+  <pre><code class="language-html"><%= escape_once snippet %></code></pre>
+</div>
