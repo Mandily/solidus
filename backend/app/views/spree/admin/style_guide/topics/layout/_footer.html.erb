@@ -1,0 +1,15 @@
+<%- snippet = capture do %>
+  <p>where the html example goes</p>
+<%- end %>
+
+<p>
+  Appears only when needed. Built to be sticky to hold table navigation so that it’s always accessible.
+</p>
+
+<div class="style-guide-result">
+  <%= snippet %>
+</div>
+
+<div class="style-guide-code">
+  <pre><code class="language-html"><%= escape_once snippet %></code></pre>
+</div>

@@ -6,13 +6,31 @@ module Spree
 
       def index
         @topics = {
-          visuals: [],
+          visuals: [
+            'colors',
+          ],
           typography: [
             'headings',
-            'lists'
+            'body_text',
+            'lists',
+            'tags'
           ],
-          forms: [],
-          navigation: []
+          forms: [
+            'labels',
+            'text_fields_boxes',
+            'dropdowns',
+            'select2_dropdowns',
+            'radio_buttons',
+            'checkboxes',
+            'buttons'
+          ],
+          navigation: [
+            'menu'
+          ],
+          layout: [
+            'header',
+            'footer'
+          ]
         }
       end
     end

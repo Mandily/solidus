@@ -1,0 +1,15 @@
+<%- snippet = capture do %>
+  <p>where the html example goes</p>
+<%- end %>
+
+<p>
+  Built to be sticky so that commonly used action buttons are always accessible. Title gets truncated if it’s too long and runs into action button area. Action button area is right aligned in the header.
+</p>
+
+<div class="style-guide-result">
+  <%= snippet %>
+</div>
+
+<div class="style-guide-code">
+  <pre><code class="language-html"><%= escape_once snippet %></code></pre>
+</div>

@@ -1,0 +1,14 @@
+<%- snippet = capture do %>
+  <p>where the html example goes</p>
+<%- end %>
+
+<p>Designed to blend in with the UI so the fields stand out. Done this way because admin users are repeat users.
+</p>
+
+<div class="style-guide-result">
+  <%= snippet %>
+</div>
+
+<div class="style-guide-code">
+  <pre><code class="language-html"><%= escape_once snippet %></code></pre>
+</div>

@@ -1,0 +1,25 @@
+<%- snippet = capture do %>
+<div class='input-group-wrapper'>
+  <h3>Checkboxes</h3>
+    <input checked id='checkbox-1' name='checkbox' type='checkbox'>
+  <label for='checkbox-1'>Checked</label>
+    <input id='checkbox-2' name='checkbox' type='checkbox'>
+  <label for='checkbox-2'>Unchecked</label>
+    <input checked disabled id='checkbox-3' name='checkbox' type='checkbox'>
+  <label for='checkbox-3'>Dischecked</label>
+    <input disabled id='checkbox-4' name='checkbox' type='checkbox'>
+  <label for='checkbox-4'>Disabled</label>
+</div>
+<%- end %>
+
+<p>
+  Words describing stuff
+</p>
+
+<div class="style-guide-result">
+  <%= snippet %>
+</div>
+
+<div class="style-guide-code">
+  <pre><code class="language-html"><%= escape_once snippet %></code></pre>
+</div>
