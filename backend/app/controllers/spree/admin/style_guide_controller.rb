@@ -13,6 +13,7 @@ module Spree
           ],
           typography: [
             'headings',
+            'body_text',
             'lists',
             'tags'
           ],
