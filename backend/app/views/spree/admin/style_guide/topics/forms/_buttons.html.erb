@@ -1,0 +1,26 @@
+<%- snippet = capture do %>
+  <p>Primary buttons</p>
+  <p>Secondary buttons</p>
+  <p>Negative action buttons</p>
+<%- end %>
+
+<p>
+  A "button" is considered any of the following:
+</p>
+<pre>
+  <code class="language-html">
+  .button,
+  button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"]
+  </code>
+</pre>
+
+<div class="style-guide-result">
+  <%= snippet %>
+</div>
+
+<div class="style-guide-code">
+  <pre><code class="language-html"><%= escape_once snippet %></code></pre>
+</div>
