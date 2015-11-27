@@ -1,8 +1,34 @@
 <%- snippet = capture do %>
-  <p>where the html example goes</p>
+  <table class="index" id="listing_products">
+    <colgroup>
+       <col style="width: 30%;">
+       <col style="width: 70%;">
+    </colgroup>
+    <thead>
+      <tr>
+        <th colspan="2">Name</th>
+        <th data-hook="admin_products_index_header_actions" class="actions"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="odd">
+        <td class="align-center"><img src="/spree/products/33/mini/apache_baseball.png?1448488070" alt="Apache baseball"></td>
+        <td>Apache Baseball Jersey</td>
+      </tr>
+      <tr class="even">
+        <td class="align-center"><img src="/spree/products/27/mini/ror_mug.jpeg?1448488069" alt="Ror mug"></td>
+        <td>Ruby on Rails Mug</td>
+      </tr>
+      <tr class="odd">
+        <td class="align-center"><img src="/spree/products/29/mini/ror_ringer.jpeg?1448488069" alt="Ror ringer"></td>
+        <td>Ruby on Rails Ringer T-Shirt</td>
+      </tr>
+    </tbody>
+  </table>
 <%- end %>
 
 <p>
+  Thumbnails accompany the title of a product, order, or user.
   Thumbnails are used within tables and need to be small to keep table rows at
   an appropriate height that many rows can be seen on a screen at a time.
 </p>
