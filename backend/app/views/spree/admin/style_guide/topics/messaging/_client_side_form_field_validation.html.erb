@@ -1,9 +1,13 @@
 <%- snippet = capture do %>
-  <p>where the html example goes</p>
+  <div class="field withError" id="user_email_field">
+    <span class="field_with_errors"><label for="user_email">Email</label></span>
+      <span class="field_with_errors"><input class="fullwidth" type="email" value="" name="user[email]" id="user_email"></span>
+    <span class="formError">Please enter a valid email address</span>
+  </div>
 <%- end %>
 
 <p>
-  Words describing stuff
+  Use client side form field validation so that the user knows they've made a mistake before they submit a form. This could be as simple as adding required validation or more involved in asking for a specific format.
 </p>
 
 <div class="style-guide-result">
