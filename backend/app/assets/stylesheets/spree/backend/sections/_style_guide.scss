@@ -29,6 +29,10 @@
 
     > section {
       @include clearfix;
+
+      #footer {
+        border-top: none;
+      }
     }
   }
 
