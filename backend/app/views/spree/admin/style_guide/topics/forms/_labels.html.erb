@@ -1,8 +1,22 @@
 <%- snippet = capture do %>
-  <p>where the html example goes</p>
+  <div id="table-filter">
+    <form>
+      <div class="field">
+        <label for="q_name_cont">Name</label>
+        <input size="15" type="text" name="q[name_cont]" id="q_name_cont">
+      </div>
+      <div class="field checkbox">
+        <label style="margin-top: 20px;">
+          <input name="q[deleted_at_null]" type="hidden" value="1"><input type="checkbox" value="0" name="q[deleted_at_null]" id="q_deleted_at_null">
+          Show deleted
+        </label>
+      </div>
+    </form>
+  </div>
 <%- end %>
 
-<p>Designed to blend in with the UI so the fields stand out. Done this way because admin users are repeat users.
+<p>Labels for text fields, text boxes, and dropdowns appear left aligned on top of their respective field.
+Labels for radio buttons and checkboxes are on the right.
 </p>
 
 <div class="style-guide-result">
