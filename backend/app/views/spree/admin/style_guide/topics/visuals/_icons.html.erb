@@ -1,11 +1,18 @@
 <%- snippet = capture do %>
-  <p>where the html example goes</p>
+  <button name="button" data-confirm="Are you sure you want to approve this order?" class="fa fa-approve button">approve</button>
+  <table>
+    <td class="actions" data-hook="admin_products_index_row_actions">
+      <a class="edit fa fa-edit icon_link with-tip no-text" data-action="edit" href="http://localhost:3000/admin/products/ruby-on-rails-ringer-t-shirt/edit"></a>
+      &nbsp;
+      <a class="clone fa fa-copy icon_link with-tip no-text" data-action="clone" href="http://localhost:3000/admin/products/ruby-on-rails-ringer-t-shirt/clone"></a>
+      &nbsp;
+      <a class="delete-resource fa fa-trash icon_link with-tip no-text" data-confirm="Are you sure?" data-action="remove" href="http://localhost:3000/admin/products/ruby-on-rails-ringer-t-shirt"></a>
+    </td>
+  </table>
 <%- end %>
 
 <p>Icons come from <a href="https://fortawesome.github.io/Font-Awesome/cheatsheet/">
-Font Awesome</a> and are created with a helper. Icons are used in conjuction
-with a text link and are included in the hover, focus and active states of the
-associated link.
+Font Awesome</a> and are created with a helper. Icons are used in the navigation, in buttons and as actions to affect a table row.
 </p>
 
 <div class="style-guide-result">
