@@ -31,14 +31,8 @@ module Spree
             'flashes',
             'tooltips'
           ],
-          layout: [
-            'grid',
-            'header',
-            'footer',
-            'tables'
-          ],
-          navigation: [
-            'menu',
+          tables: [
+            'tables',
             'table_sorting',
             'table_pagination'
           ]
