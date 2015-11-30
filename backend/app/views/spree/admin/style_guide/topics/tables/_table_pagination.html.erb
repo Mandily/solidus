@@ -1,10 +1,17 @@
 <%- snippet = capture do %>
-  <p>where the html example goes</p>
-<%- end %>
+  <nav class="pagination">
+  <span class="first"><a href="#">« First</a></span>
+  <span class="prev"><a href="#">‹ Prev</a></span>
 
-<p>
-  Words describing stuff
-</p>
+  <span class="page"><a href="#">1</a></span>
+  <span class="page"><a href="#">2</a></span>
+  <span class="page current">3</span>
+  <span class="page"><a href="#">4</a></span>
+  <span class="page"><a href="#">5</a></span>
+  <span class="next"><a href="#">Next ›</a></span>
+  <span class="last"><a href="#">Last »</a></span>
+</nav>
+<%- end %>
 
 <div class="style-guide-result">
   <%= snippet %>
