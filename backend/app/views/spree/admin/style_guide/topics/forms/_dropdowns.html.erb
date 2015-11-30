@@ -1,10 +1,19 @@
 <%- snippet = capture do %>
-  <p>where the html example goes</p>
-<%- end %>
+<form>
+  <label for='select-1'>html select box</label>
+  <select id='select-1' pretty-select>
+    <option value='CA'>Canada</option>
+    <option value='US'>United States</option>
+    <option value='MX'>Mexico</option>
+    <option value='BR'>Brazil</option>
+    <option value='PE'>Peru</option>
+  </select>
 
-<p>
-  Words describing stuff
-</p>
+  <label>select2 select box</label>(can be configured with options found on the <a href="https://select2.github.io/examples.html">select2 site</a>)
+
+  <label>select2 tag field</label>
+</form>
+<%- end %>
 
 <div class="style-guide-result">
   <%= snippet %>
