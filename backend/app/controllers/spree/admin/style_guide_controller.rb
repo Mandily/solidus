@@ -32,7 +32,7 @@ module Spree
             'tooltips'
           ],
           tables: [
-            'tables',
+            'table_layout',
             'table_sorting',
             'table_pagination'
           ]
