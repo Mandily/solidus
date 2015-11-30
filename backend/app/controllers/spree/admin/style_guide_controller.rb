@@ -20,7 +20,6 @@ module Spree
             'labels',
             'text_fields_boxes',
             'dropdowns',
-            'select2_dropdowns',
             'radio_buttons',
             'checkboxes',
             'buttons'
