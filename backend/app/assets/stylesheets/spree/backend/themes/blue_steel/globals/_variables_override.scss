@@ -1,21 +1,33 @@
-$cerulean:                       hsl(216, 57, 47);
+$cerulean:                      hsl(216, 57, 47);
 
-$white:                          hsl(220, 0, 100);
-$gray-light:                     hsl(220, 9, 71);
-$gray:                           hsl(220, 8, 23);
-$gray-dark:                      hsl(220, 12, 18);
-$black:                          hsl(220, 19, 13);
+$gray-light:                    hsl(220, 9, 71);
+$gray:                          hsl(220, 8, 23);
+$gray-dark:                     hsl(220, 12, 18);
+$black:                         hsl(220, 19, 13);
 
-$color-primary:                  $cerulean;
+$white:							#FFF;
+$grey-050:						#F6F5F8;
+$grey-100:						#E1E1E8;
+$grey-200:						#CBC9D1;
+$grey-300:						#B0AFB8;		// Unused
+$grey-400:						#9A97A1;
+$grey-500:						#817F89;		// Unused
+$grey-600:						#686772;		// Unused
+$grey-700:						#4E4C59;
+$grey-800:						#363442;
+$grey-900:						#1D192B;
+$black:							#040114;
 
-$color-sidebar-bg:              $gray;
-$color-sidebar-border:          very-light(#5498DA, 12); // $color-border
-$color-navbar:                  $gray-light;
-$color-navbar-bg:               $gray;
+$color-primary:                 $cerulean;
+
+$color-sidebar-bg:              $grey-800;
+$color-sidebar-border:          $grey-100; // $color-border
+$color-navbar:                  $grey-200;
+$color-navbar-bg:               $grey-800;
 $color-navbar-active:           $white;
 $color-navbar-active-bg:        $color-primary;
-$color-navbar-submenu:          tint($gray-light, 40%);
-$color-navbar-submenu-bg:       $gray-dark;
+$color-navbar-submenu:          $grey-200;
+$color-navbar-submenu-bg:       $grey-900;
 $color-navbar-submenu-active:   tint($color-primary, 20%);
 $color-navbar-footer:           $color-navbar;
 $color-navbar-footer-active:    $color-navbar-active;
