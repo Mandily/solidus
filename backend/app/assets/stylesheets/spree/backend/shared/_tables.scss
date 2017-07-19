@@ -4,7 +4,7 @@ table {
   border-spacing: 0;
 
   th, td {
-    vertical-align: top;
+    line-height: 2;
     text-overflow: ellipsis;
 
     .handle {
@@ -101,7 +101,6 @@ table {
     td, th {
       border: none !important;
     }
-
   }
 
   th:not(.wrap-text), td.actions, td.no-wrap, .state {
@@ -113,6 +112,9 @@ table {
   }
 
   tbody {
+
+    &.ui-sortable td { vertical-align: middle }
+
     tr {
         img {
           border: 1px solid very-light($color-3, 6);

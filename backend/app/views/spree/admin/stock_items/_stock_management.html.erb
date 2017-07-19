@@ -19,10 +19,11 @@
       <th class="actions"></th>
     </tr>
   </thead>
+  <% row_count = @stock_item_stock_locations.size + 1 %>
+  <% stock_item_row_height = 116.0 / [@stock_item_stock_locations.size, 1].max %>
   <% variants.each do |variant| %>
     <%- locations_without_items = @stock_item_stock_locations - variant.stock_items.flat_map(&:stock_location) %>
     <%- display_add_row = locations_without_items.any? && can?(:create, Spree::StockItem) %>
-    <%- row_count = @stock_item_stock_locations.count + 2 %>
     <tbody class="variant-stock-items">
       <tr id="<%= spree_dom_id variant %>">
         <td class="no-padding" rowspan="<%= row_count %>">
@@ -61,7 +62,7 @@
       </tr>
       <% variant.stock_items.each do |item| %>
         <% if @stock_item_stock_locations.include?(item.stock_location) %>
-          <tr class="js-edit-stock-item stock-item-edit-row" data-variant-id="<%= variant.id %>" data-stock-item="<%= item.to_json %>" data-stock-location-name="<%= item.stock_location.name %>">
+          <tr class="js-edit-stock-item stock-item-edit-row" data-variant-id="<%= variant.id %>" data-stock-item="<%= item.to_json %>" data-stock-location-name="<%= item.stock_location.name %>" style="height: <%= stock_item_row_height.ceil %>px">
             <%# This is rendered in JS %>
           </tr>
         <% end %>
